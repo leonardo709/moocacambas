@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logotipomoocacambas.png" />
+    <link rel="apple-touch-icon" href="assets/logotipomoocacambas.png" />
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+   
+    <title>Moocaçambas</title>
+</head>
+<body>
+    <header class="header" >
+        <div class="horizontalPadding">
+          <div class="row space-between align-center">
+            <nav class="hidde-in-mobile" >
+                <ul class="row">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    
+                </ul>
+            </nav>
+
+                <input type="checkbox" id="target">
+                <label for="target" onclick="changeMenu()" >
+                    <div class="menu-box hidde-in-desktop">
+                        <div class="menu-mobile"></div>
+                    </div>
+                </label>
+    
+            <img src="assets/logotipomoocacambas.png" height="100px" width="200px" alt="caçamba de lixo">
+          </div>
+        </div>
+    </header>
+
+    <div class="menu-links" id="menu-container">
+        <div class="row justify-center">
+            <a href="index.html">HOME</a>
+        </div>
+        <div class="row justify-center">
+            <a href="contato.html">CONTATO</a>
+        </div>
+    </div>
+
+<main>
+    <div class="hero">
+        <div class="horizontalPadding">
+            <div class="hero-subcontainer">
+                <h1>Moocaçambas  <br/></h1>
+                <br/>
+                <p>Atendemos Mooca e região, alugue já sua caçamba e faça um orçamento de forma rapida via whatsapp </p>
+                <br/>
+                <a target="_blank" href="https://api.whatsapp.com/send?phone=5511972280097&text=Texto%20aqui" class="default-button">
+                    ALUGAR AGORA
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="horizontalPadding">
+        <div class="verticalPadding">
+            <div class="row space-between full-width align-center column-in-mobile">
+                <img width="280px" height="280" src="assets/caminhao.jpg" alt="caminhão carregando caçamba">
+                <div class="column">
+                    &nbsp;
+                    <h2 class="font-center full-width">Mais do que uma empresa de locação</h2>
+        
+                    <p class="font-center full-width">Temos compromisso com o que fazemos</p>
+                    <p class="font-center full-width">Peça seu orçamento sem compromisso, Atendemos Mooca e região</p>
+                    <br/>
+                    <br/>
+                    <div class="row justify-center">
+                        <a target="_blank" href="https://api.whatsapp.com/send?phone=5511972280097&text=Texto%20aqui" class="default-button">
+                            SAIBA MAIS
+                        </a>
+                    </div>
+                    &nbsp;
+                    &nbsp;
+                    &nbsp;
+                </div>
+                <img width="280px" height="280" src="assets/moocacambas.png" alt="caçamba de lixo">
+            </div>
+        </div>
+    </div>
+</main>
+<footer class="footer">
+    <div class="horizontalPadding">
+        <div class="verticalPadding row space-between">
+           <div class="footer-grid">
+            <div class="row justify-center full-width">
+                <a href="mailto: moocacambas@gmail.com">
+                    moocacambas@gmail.com
+                </a>
+            </div>
+
+            <div class="row justify-center full-width">
+                <div>
+                    <img src="assets/logotipo-circular-do-facebook.png" width="30px" height="30px" alt="nosso facebook">
+                    &nbsp;
+                    <img src="assets/instagram.png" width="30px" height="30px" alt="nosso instagram">
+                </div>
+            </div>
+                  
+           <div class="row justify-center full-width">
+            <a href="tel:2615-7009">
+                2615-7009
+            </a>
+           </div>
+           </div>
+        </div>
+</div>
+    
+</footer>
+
+<script>
+    var showMenu = false
+
+    function changeMenu(){
+        showMenu = !showMenu
+        const menuMobile = document.getElementById('menu-container')
+        
+        if(showMenu == true){
+            menuMobile.classList.add('min-content')
+        }
+        else{
+            menuMobile.classList.remove('min-content')
+        }
+    }
+</script>
+</body>
+</html>

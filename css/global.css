@@ -1,0 +1,153 @@
+.row{
+    display: flex;
+}
+
+.space-between{
+    justify-content: space-between;
+}
+
+.full-width{
+    width: 100%;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.horizontalPadding{
+    width: 100%;
+    padding: 0 10% ;
+}
+
+.verticalPadding{
+    width: 100%;
+    padding: 50px 0;
+}
+.font-center{
+    text-align: center;
+}
+.column{
+    display:flex;
+   flex-direction: column;
+}
+
+.menu-box{
+    cursor: pointer;
+}
+
+.menu-mobile{
+    position: relative;
+    display: block;
+    background: #010101;
+    width: 30px;
+    border-radius: 5px;
+    height: 3px;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-mobile:after,
+.menu-mobile:before{
+    background: #010101;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.5s ease-in-out;
+}
+
+.menu-mobile:before{
+    top: -10px;
+}
+
+.menu-mobile:after{
+    bottom: -10px;
+}
+
+#target{
+    display: none;
+}
+
+.menu-box{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    left: 0;
+    /* border: 1px solid red; */
+}
+
+.menu-hamburguer{
+    margin: 0;
+    padding: 0;
+}
+
+ input:checked ~ label .menu-mobile {
+    transform: rotate(45deg);
+  }
+  
+  input:checked ~ label .menu-mobile:before {
+    transform: rotate(90deg);
+    top: 0;
+  }
+  
+ input:checked ~ label .menu-mobile:after {
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+
+.menu-links{
+    transition: 0.5s ease-in-out;
+    height: 0;
+    overflow: hidden;
+}
+
+.min-content{
+    transition: 0.5s ease-in-out;
+    height: 140px;
+}
+
+.menu-links a{
+    padding: 20px 0;
+    text-decoration: none;
+    color: #010101;
+    font-weight: bolder;
+}
+
+  @media(min-width: 600px){
+    .hidde-in-desktop{
+        display: none;
+    }
+}
+
+
+@media(max-width: 600px){
+    .horizontalPadding{
+        padding: 0 5%;
+    }
+
+    .hidde-in-mobile{
+        display: none;
+    }
+
+    .column-in-mobile{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-grid{
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .hero{
+        background-position-x: 5%;
+    }
+
+    .hero p {
+        width: 100%;
+    }
+}

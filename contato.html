@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/logotipomoocacambas.png" />
+    <link rel="apple-touch-icon" href="assets/logotipomoocacambas.png" />
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com/%22%3E"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <script src="pasta/arquivo.js"></script>
+    <title>Moocaçambas</title>
+</head>
+<body>
+    <header class="header" >
+        <div class="horizontalPadding">
+          <div class="row space-between align-center">
+            <nav class="hidde-in-mobile" >
+                <ul class="row">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    
+                    <li>
+                        <a href="contato.html">Contato</a>
+                    </li> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    
+                </ul>
+            </nav>
+
+                <input type="checkbox" id="target">
+                <label for="target" onclick="changeMenu()" >
+                    <div class="menu-box hidde-in-desktop">
+                        <div class="menu-mobile"></div>
+                    </div>
+                </label>
+    
+            <img src="assets/logotipomoocacambas.png" height="100px" width="200px" alt="caçamba de lixo">
+          </div>
+        </div>
+    </header>
+
+    <div class="menu-links" id="menu-container">
+        <div class="row justify-center">
+            <a href="index.html">HOME</a>
+        </div>
+        <div class="row justify-center">
+            <a href="contato.html">CONTATO</a>
+        </div>
+    </div>
+
+
+    <div class="horizontalPadding">
+        <div class="horizontalPadding">
+            <div class="horizontalPadding">
+                <div class="verticalPadding">
+                    <div class="row space-between full-width align-center column-in-mobile">
+                        <div class="column">
+                            <a href="https://api.whatsapp.com/send?phone=5511972280097&text=Texto%20aqui"
+                               style="text-decoration: none; color: #020202;"
+                               target="_blank" class="align-center row default-link"
+                               width = "200px"
+                            >
+                                <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+                                &nbsp; +55(11)972280097
+                            </a>
+                            &nbsp;
+                            &nbsp;
+                            &nbsp;
+                            <a href="https://api.whatsapp.com/send?phone=5511963493318&text=Texto%20aqui"
+                                style="text-decoration: none; color: #020202;"
+                                target="_blank" class="align-center row default-link"
+                            >
+                            <svg enable-background="new 0 0 512 512" width="50" height="50" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"><path d="M256.064,0h-0.128l0,0C114.784,0,0,114.816,0,256c0,56,18.048,107.904,48.736,150.048l-31.904,95.104  l98.4-31.456C155.712,496.512,204,512,256.064,512C397.216,512,512,397.152,512,256S397.216,0,256.064,0z" fill="#4CAF50"/><path d="m405.02 361.5c-6.176 17.44-30.688 31.904-50.24 36.128-13.376 2.848-30.848 5.12-89.664-19.264-75.232-31.168-123.68-107.62-127.46-112.58-3.616-4.96-30.4-40.48-30.4-77.216s18.656-54.624 26.176-62.304c6.176-6.304 16.384-9.184 26.176-9.184 3.168 0 6.016 0.16 8.576 0.288 7.52 0.32 11.296 0.768 16.256 12.64 6.176 14.88 21.216 51.616 23.008 55.392 1.824 3.776 3.648 8.896 1.088 13.856-2.4 5.12-4.512 7.392-8.288 11.744s-7.36 7.68-11.136 12.352c-3.456 4.064-7.36 8.416-3.008 15.936 4.352 7.36 19.392 31.904 41.536 51.616 28.576 25.44 51.744 33.568 60.032 37.024 6.176 2.56 13.536 1.952 18.048-2.848 5.728-6.176 12.8-16.416 20-26.496 5.12-7.232 11.584-8.128 18.368-5.568 6.912 2.4 43.488 20.48 51.008 24.224 7.52 3.776 12.48 5.568 14.304 8.736 1.792 3.168 1.792 18.048-4.384 35.52z" fill="#FAFAFA"/></svg>
+                            &nbsp; +55(11)963493318
+                            &nbsp;
+                        </a>  
+                        &nbsp;
+                        &nbsp;
+                        &nbsp;
+            <a href="https://www.instagram.com/moocacambas/" style="text-decoration: none; color: #020202;"
+                target="_blank" class="align-center row default-link"
+                >
+                <img src="assets/instagram-logo.png" alt="some text" width=50 height=50>
+                &nbsp; @Moocacambas
+                </a>
+                &nbsp;
+            &nbsp;
+            &nbsp;
+            <a href="https://www.facebook.com/mooca.cacambas" style="text-decoration: none; color: #020202;"
+                target="_blank" class="align-center row default-link"
+                >
+                <img src="assets/facebook-logo.png" alt="some text" width=50 height=50>
+                &nbsp; Moocaçambas Entulhos
+            </a>
+            &nbsp;
+                </div>
+                 <img width="320px" height="320" src="assets/logocontatos2.png" alt="caçamba de lixo">
+                </div>
+                </div>
+            </div>
+        </div>  
+        </div>  
+       
+        <footer class="footer">
+            <div class="horizontalPadding">
+                <div class="verticalPadding row space-between">
+                   <div class="footer-grid">
+                    <div class="row justify-center full-width">
+                        <a href="mailto: moocacambas@gmail.com">
+                            moocacambas@gmail.com
+                        </a>
+                    </div>
+        
+                    <div class="row justify-center full-width">
+                        <div>
+                            <img src="assets/logotipo-circular-do-facebook.png" width="30px" height="30px" alt="nosso facebook">
+                            &nbsp;
+                            <img src="assets/instagram.png" width="30px" height="30px" alt="nosso instagram">
+                        </div>
+                    </div>
+                          
+                   <div class="row justify-center full-width">
+                    <a href="tel:2615-7009">
+                        2615-7009
+                    </a>
+                   </div>
+                   </div>
+                </div>
+        </div>
+            
+        </footer>
+
+        <script>
+            var showMenu = false
+        
+            function changeMenu(){
+                showMenu = !showMenu
+                const menuMobile = document.getElementById('menu-container')
+                
+                if(showMenu == true){
+                    menuMobile.classList.add('min-content')
+                }
+                else{
+                    menuMobile.classList.remove('min-content')
+                }
+            }
+        </script>
+          
+    </body>
+</html>
